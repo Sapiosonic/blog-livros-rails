@@ -1,24 +1,11 @@
-# README
+# Desafio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Utilizando todos os conhecimentos que aprendemos em aula, agora você irá criar o seu blog sozinho, e ele será um blog dos livros que você leu esse ano, e nele você deverá colocar as seguintes informações:
 
-Things you may want to cover:
+1. Título do livro;
 
-* Ruby version
+2. Autor do livro;
 
-* System dependencies
+3. Nota que você deu a esse livro;
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4. Descrição do livro;
