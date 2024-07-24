@@ -16,6 +16,7 @@
 
 @import 'header';
 @import 'footer';
+@import 'books';
 
 * {
   box-sizing: border-box;
@@ -27,4 +28,58 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.new-book-link {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.new-book-link:hover {
+  background-color: #3e8e41;
+}
+
+.new-book-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-book-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-book-form input,
+.new-book-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.new-book-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-book-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.new-book-title{
+  color: #000000;
+  text-align: center;
 }

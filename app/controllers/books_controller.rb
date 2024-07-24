@@ -14,9 +14,9 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     if @book.save
-      redirect_to @book, notice: 'Book was successfully created.'
+      turbo_stream.replace 'books', partial: 'books', locals: { books: Book.all }
     else
-      render :new
+      turbo_stream.replace 'new_book', partial: 'form', locals: { book: @book }
     end
   end
 
