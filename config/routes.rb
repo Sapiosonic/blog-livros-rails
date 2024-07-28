@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   Rails.application.routes.draw do
     root 'books#index'
-    resources :posts
     resources :books
   end
 end
