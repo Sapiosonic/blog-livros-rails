@@ -24,6 +24,10 @@
   padding: 0;
 }
 
+main {
+  min-height: 505px;
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
