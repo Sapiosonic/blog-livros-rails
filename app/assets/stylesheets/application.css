@@ -34,7 +34,8 @@ main {
   padding: 20px;
 }
 
-.new-book-link {
+.new-book-link,
+.index-book-link {
   background-color: #4CAF50;
   color: #ffffff;
   padding: 10px 20px;
@@ -44,7 +45,18 @@ main {
   margin-bottom: 50px;
 }
 
-.new-book-link:hover {
+.new-book {
+  width: 100%;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 90px;
+}
+
+.new-book-link:hover,
+.index-book-link:hover {
   background-color: #3e8e41;
 }
 
