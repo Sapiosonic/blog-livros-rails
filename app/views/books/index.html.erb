@@ -1,15 +1,18 @@
 <h1>Books</h1>
 
 <div class="container">
-  <ul>
-    <% @books.each do |book| %>
-      <li>
-        <%= book.title %> by <%= book.author %>
-        (<%= book.rating %>/5)
-        <%= link_to 'Read more', book %>
-      </li>
-    <% end %>
-  </ul>
 
-  <%= link_to 'New Book', new_book_path, class: 'new-book-link' %>
+  <% @books.each do |book| %>
+    <div class="book-post">
+      <h2 class="title"><%= book.title %></h2>
+      <p class="author"><%= book.author%></p>
+      <p class="rating">Rating: (<%= book.rating %>/5)</p>
+      <p class="description"><%= book.description %></p>
+      <%= link_to 'Read more', book %>
+    </div>
+  <% end %>
+
+  <div class="new-book">
+    <%= link_to 'New Book', new_book_path, class: 'new-book-link' %>
+  </div>
 </div>

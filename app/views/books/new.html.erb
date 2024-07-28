@@ -2,21 +2,20 @@
   <h1 class="new-book-title">New Book</h1>
 
   <div class="new-book-form">
-    <%= form_for(:book, url: { controller: 'books', action: 'create' }) do |form| %>
-      <%= form.label :title %>
-      <%= form.text_field :title %>
+  <%= form_for(Book.new) do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
 
-      <%= form.label :author %>
-      <%= form.text_field :author %>
+    <%= form.label :author %>
+    <%= form.text_field :author %>
 
-      <%= form.label :rating %>
-      <%= form.number_field :rating %>
+    <%= form.label :rating %>
+    <%= form.number_field :rating, min: 1, max: 5, message: "Informe um número entre 1 e 5" %>
 
-      <%= form.label :description %>
-      <%= form.text_area :description %>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
 
     <%= form.submit 'Create Book', class: 'btn btn-primary' %>
+  <% end %>
   </div>
 </div>
-
-<% end %>

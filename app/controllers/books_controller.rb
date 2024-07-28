@@ -12,13 +12,21 @@ class BooksController < ApplicationController
   end
 
   def create
+
     @book = Book.new(book_params)
+
     if @book.save
-      turbo_stream.replace 'books', partial: 'books', locals: { books: Book.all }
+
+      redirect_to books_path, notice: "Book was successfully created."
+
     else
-      turbo_stream.replace 'new_book', partial: 'form', locals: { book: @book }
+
+      render :new, status: :unprocessable_entity
+
     end
+
   end
+
 
   private
 
